@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+:root {
+   color-scheme: light dark;
+   --base-ff: 'Josefin Sans', sans-serif;
+   --base-fS: 1.8rem;
+   --max-width: 600px;
+   /* primary colors */
+   --clr-bright-blue: hsl(220, 98%, 61%);
+   --clr-check-background: linear-gradient(
+      hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+   );
+
+   /* dark theme colors */
+   --clr-darkTheme-very-dark-blue: hsl(235, 21%, 11%);
+   --clr-darkTheme-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+   --clr-darkTheme-light-grayish-blue: hsl(234, 39%, 85%);
+   --clr-darkTheme-light-grayish-blue-hover: hsl(236, 33%, 92%);
+   --clr-darkTheme-dark-grayish-blue: hsl(234, 11%, 52%);
+   --clr-darkTheme-very-dark-grayish-blue: hsl(233, 14%, 35%);
+   --clr-darkTheme-very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+   /* light theme colors */
+   --clr-lightTheme-very-light-gray: hsl(0, 0%, 98%);
+   --clr-lightTheme-very-light-grayish-blue: hsl(236, 33%, 92%);
+   --clr-lightTheme-light-grayish-blue: hsl(233, 11%, 84%);
+   --clr-lightTheme-dark-grayish-blue: hsl(236, 9%, 61%);
+   --clr-lightTheme-very-dark-grayish-blue: hsl(235, 19%, 35%);
+}
+
+body {
+   font-size: var(--base-fS);
+   font-family: var(--base-ff);
+}
+
+body[class*='dark'] {
+   background-color: var(--clr-darkTheme-very-dark-blue);
+}
+
+body[class*='light'] {
+   background-color: var(--clr-lightTheme-very-light-gray);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+   object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+   border: none;
+   outline: none;
+   background-color: transparent;
+}
+
+button {
+   border: none;
+   background-color: transparent;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+input[type='checkbox'] {
+   display: none; /* Hide the default checkbox */
+}
+
+.line-through {
+   text-decoration: line-through;
+}
+
+.logo {
+   font-weight: bold;
+}
+
+label {
+   display: inline-block;
+   position: relative;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   box-shadow: 0 0 0 0.1rem var(--clr-darkTheme-light-grayish-blue);
+   cursor: pointer;
+}
+
+label:hover {
+   box-shadow: 0 0 0 0.1rem hsl(192, 100%, 67%), 0 0 0 0.2rem hsl(280, 87%, 65%);
+}
+
+label::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(45deg);
+   width: 7px;
+   height: 12px;
+   border: solid #fff; /* Check mark color */
+   border-width: 0 2px 2px 0; /* Adjust thickness and direction */
+   opacity: 0; /* Initially transparent */
+   transition: opacity 0.2s ease-in-out; /* Add transition effect */
+}
+
+input[type='checkbox']:checked + label {
+   background-image: linear-gradient(
+      to bottom,
+      hsl(192, 100%, 67%),
+      hsl(280, 87%, 65%)
+   ); /* Gradient background */
+}
+
+input[type='checkbox']:checked + label::before {
+   opacity: 1; /* Make the check mark visible */
+}
+
+/* styles for draggrable elements */
+/* .drag {
+   style will be added 
+} */
