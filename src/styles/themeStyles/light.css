@@ -1,0 +1,41 @@
+.logo[class*='light'] {
+    color: var(--clr-lightTheme-very-light-gray);
+ }
+ 
+ [data_todoinput_mode*='light'] {
+    background-color: var(--clr-lightTheme-very-light-gray);
+    color: var(--clr-darkTheme-very-dark-blue);
+ }
+ 
+ [data_todoitems_mode*='light'] {
+    background-color: var(--clr-lightTheme-very-light-gray);
+ }
+ 
+ [data_todoitem_mode*='light'] {
+    border-bottom: 1px solid var(--clr-lightTheme-light-grayish-blue);
+ }
+ 
+ [data_todo_heading_mode*='light'] {
+    color: var(--clr-darkTheme-very-dark-blue);
+ }
+ 
+ [data_analyze_mode*='light'] {
+    color: var(--clr-darkTheme-dark-grayish-blue);
+ }
+ 
+ [data_analyze_mode*='light'] button {
+    color: var(--clr-darkTheme-dark-grayish-blue);
+ }
+ 
+ [data_analyze_mode*='light'] button:hover {
+    color: black;
+ }
+ 
+ [data_status_mode*='light'] button:first-of-type {
+    color: var(--clr-bright-blue);
+ }
+ 
+ [data_status_mode*='light'] {
+    background-color: var(--clr-lightTheme-very-light-gray);
+ }
+ 
