@@ -1,0 +1,48 @@
+.logo[class*='dark'] {
+    color: var(--clr-lightTheme-very-light-gray);
+ }
+ 
+ [data_todoinput_mode*='dark'] {
+    background-color: var(--clr-darkTheme-very-dark-desaturated-blue);
+ }
+ 
+ [data_todoinput_mode*='dark'] input[type='text'] {
+    color: var(--clr-lightTheme-very-light-gray);
+ }
+ 
+ [data_todoitems_mode*='dark'] {
+    background-color: var(--clr-darkTheme-very-dark-desaturated-blue);
+ }
+ 
+ [data_todoitem_mode*='dark'] {
+    border-bottom: 1px solid var(--clr-darkTheme-very-dark-grayish-blue);
+ }
+ 
+ [data_todoitem_mode*='dark'] span {
+    background-color:(--clr-darkTheme-very-dark-grayish-blue);
+ }
+ 
+ [data_todo_heading_mode*='dark'] {
+    color: var(--clr-darkTheme-light-grayish-blue);
+ }
+ 
+ [data_analyze_mode*='dark'] {
+    color: var(--clr-darkTheme-dark-grayish-blue);
+ }
+ 
+ [data_analyze_mode*='dark'] button {
+    color: var(--clr-darkTheme-dark-grayish-blue);
+ }
+ 
+ [data_analyze_mode*='dark'] button:hover {
+    color: var(--clr-darkTheme-light-grayish-blue-hover);
+ }
+ 
+ [data_status_mode*='dark'] button:first-of-type {
+    color: var(--clr-bright-blue);
+ }
+ 
+ [data_status_mode*='dark'] {
+    background-color: var(--clr-darkTheme-very-dark-desaturated-blue);
+ }
+ 
