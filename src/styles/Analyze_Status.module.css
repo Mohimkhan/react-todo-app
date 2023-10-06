@@ -1,0 +1,44 @@
+.analyze,
+.status {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.analyze {
+   position: relative;
+   padding: 1.5rem;
+}
+
+.analyze button {
+   cursor: pointer;
+   font-weight: 700;
+}
+
+.status {
+   justify-content: center;
+   gap: 1rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 1rem 0;
+   margin-top: 9rem;
+   border-radius: 4px;
+   width: 100%;
+}
+
+.status button:first-of-type {
+   color: var(--clr-bright-blue);
+}
+
+@media only screen and (min-width: 376px) {
+   .status {
+      position: static;
+      transform: translate(0, 0);
+      margin-top: 0;
+      padding: 0 0;
+      width: auto;
+      border-radius: 0;
+   }
+}
