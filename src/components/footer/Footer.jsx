@@ -1,5 +1,11 @@
+import './Footer.module.css';
+
 const Footer = () => {
-   return <div>Footer</div>;
+   return (
+      <footer>
+         <p>Drag and drop to reorder list</p>
+      </footer>
+   );
 };
 
 export default Footer;
