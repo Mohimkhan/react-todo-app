@@ -1,0 +1,52 @@
+/* #############
+   header 
+#############*/
+header {
+    height: 24vh;
+    background-image: url('../../assets/bg-mobile-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Add other styles for the header */
+ }
+ 
+ header[class='dark'] {
+    background-image: url('../../assets/bg-mobile-dark.jpg');
+ }
+ 
+ header[class='light'] {
+    background-image: url('../../assets/bg-mobile-light.jpg');
+ }
+ 
+ header > div {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+ }
+ 
+ header button img {
+    cursor: pointer;
+ }
+ 
+ /* Media query for screens larger than 375px */
+ @media only screen and (min-width: 376px) {
+    header {
+       min-height: 38vh;
+       background-image: url('../../assets/bg-desktop-dark.jpg');
+    }
+ 
+    header[class='dark'] {
+       background-image: url('../../assets/bg-desktop-dark.jpg');
+    }
+ 
+    header[class='light'] {
+       background-image: url('../../assets/bg-desktop-light.jpg');
+    }
+ 
+    header > div {
+       padding-top: 8.5rem;
+    }
+ }
